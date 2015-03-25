@@ -1,1 +1,8 @@
 .DS_Store
+*.o
+*.pyc
+.depend
+*_pb2.py
+.gradle
+java/test/build
+java/demo/build
