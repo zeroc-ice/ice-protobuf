@@ -2,9 +2,6 @@
 #
 # Copyright (c) 2003-2015 ZeroC, Inc. All rights reserved.
 #
-# This copy of Ice is licensed to you under the terms described in the
-# ICE_LICENSE file included in this distribution.
-#
 # **********************************************************************
 
 #
@@ -12,7 +9,7 @@
 #
 
 #
-# If CXX is not defined anywhere, the default (from gmake) is g++. 
+# If CXX is not defined anywhere, the default (from gmake) is g++.
 #
 CXX = CC
 
@@ -27,13 +24,13 @@ ifeq ($(CXX),CC)
     #
     # Recent version of Sun CC
     #
-    
+
     ifeq ($(LP64),yes)
          CXXARCHFLAGS   += -m64
     else
 	 CXXARCHFLAGS   += -m32
     endif
-          
+
     #
     # wvarhidenmem,wvarhidemem: various name hiding
     # notemsource: Could not find source for <template name>
@@ -53,12 +50,12 @@ ifeq ($(CXX),CC)
     else
         CXXFLAGS     += -g
     endif
-    
+
     mkshlib          = $(CXX) -G $(LDFLAGS) -o $(1) -h $(2) $(3) $(4)
 
     mklib            = $(CXX) -xar -o $(1) $(2)
 
-    
+
     CXXLIBS          = -lCrun -lCstd
 
 
@@ -93,7 +90,7 @@ ifeq ($(CXX),g++)
     else
         CXXFLAGS	    += -g
     endif
-    
+
     mkshlib		    = $(CXX) -shared $(LDFLAGS) -o $(1) -h $(2) $(3) $(4)
 
     mklib		    = ar cr $(1) $(2)

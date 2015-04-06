@@ -8,21 +8,21 @@ def copyright(commentMark, product, license):
     result.append(commentMark + " **********************************************************************\n")
     result.append(commentMark + "\n")
     result.append(commentMark + " Copyright (c) 2003-2015 ZeroC, Inc. All rights reserved.\n")
-    result.append(commentMark + "\n")
-    line1 = commentMark + (" This copy of %s is licensed to you under the terms described in the") % product
-    line2 = commentMark
-    if len(line1) >= 72:
-        line2 = commentMark + line1[line1.rfind(" ", 0, 72):]
-        line1 = line1[:line1.rfind(" ", 0, 72)]
-    line2 += (" %s file included in this distribution.") % license
-    line3 = commentMark
-    if len(line2) >= 72:
-        line3 = commentMark + line2[line2.rfind(" ", 0, 72):]
-        line2 = line2[:line2.rfind(" ", 0, 72)]
-    result.append(line1 + "\n")
-    result.append(line2 + "\n")
-    if line3 != commentMark:
-        result.append(line3 + "\n")
+    # result.append(commentMark + "\n")
+    # line1 = commentMark + (" This copy of %s is licensed to you under the terms described in the") % product
+    # line2 = commentMark
+    # if len(line1) >= 72:
+    #     line2 = commentMark + line1[line1.rfind(" ", 0, 72):]
+    #     line1 = line1[:line1.rfind(" ", 0, 72)]
+    # line2 += (" %s file included in this distribution.") % license
+    # line3 = commentMark
+    # if len(line2) >= 72:
+    #     line3 = commentMark + line2[line2.rfind(" ", 0, 72):]
+    #     line2 = line2[:line2.rfind(" ", 0, 72)]
+    # # result.append(line1 + "\n")
+    # # result.append(line2 + "\n")
+    # # if line3 != commentMark:
+    #     # result.append(line3 + "\n")
     result.append(commentMark + "\n")
     result.append(commentMark + " **********************************************************************\n")
     return result
@@ -30,10 +30,6 @@ def copyright(commentMark, product, license):
 # **********************************************************************
 #
 # Copyright (c) 2003-2015 ZeroC, Inc. All rights reserved.
-#
-# This copy of Ice Protobuf is licensed to you under the terms
-# described in the ICE_PROTOBUF_LICENSE file included in this
-# distribution.
 #
 # **********************************************************************
 def replaceCopyright(file, commentMark, commentBegin, commentEnd, newCopyrightLines):
