@@ -1,7 +1,7 @@
 This repository contains sample applications that demonstrate how to
 integrate Google Protocol Buffers with Ice.
 
-Included are demos and tess written in C++, Java, and Python. They were
+Included are demos and tests written in C++, Java, and Python. They were
 tested with:
 
   - Ice 3.6.0
