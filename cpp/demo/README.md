@@ -43,15 +43,14 @@ include this code using a cpp:include metadata directive.
 Refer to Hello.ice in this directory for the complete example.
 
 
-Building the demo on Linux/OS X/Unix
+Building the demo on Linux/OS X
 ------------------------------------
 
-If you are using a non-RPM install or have not installed Ice in the
-default location (/opt/Ice-VERSION) then you will need to set the
-environment variable ICE_HOME to point to the root directory of your
-Ice installation:
+If you've installed Ice in a non-standard location, you'll need to
+set the `ICE_HOME` environment variable with the path name of the
+installation directory. For example:
 
-  $ export ICE_HOME=<Ice installation root directory>
+  $ export ICE_HOME=~/testing/Ice
 
 Please review the Makefile in this directory and adjust the value
 of PROTOBUF_HOME to reflect the installation directory of Protocol

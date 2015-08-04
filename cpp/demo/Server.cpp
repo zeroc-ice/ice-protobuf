@@ -24,7 +24,7 @@ main(int argc, char* argv[])
 }
 
 int
-HelloServer::run(int argc, char* argv[])
+HelloServer::run(int argc, char*[])
 {
     if(argc > 1)
     {
