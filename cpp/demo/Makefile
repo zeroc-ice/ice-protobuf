@@ -4,13 +4,6 @@
 #
 # **********************************************************************
 
-#
-# If protobuf is not installed in a standard location where the
-# compiler can find it, set PROTOBUF_HOME to the protobuf installation
-# directory.
-#
-PROTOBUF_HOME   ?= /usr/local
-
 top_srcdir	= ..
 
 CLIENT		= client

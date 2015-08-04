@@ -5,6 +5,13 @@
 # **********************************************************************
 
 #
+# If protobuf is not installed in a standard location where the
+# compiler can find it, set PROTOBUF_HOME to the protobuf installation
+# directory.
+#
+PROTOBUF_HOME   ?= /usr/local
+
+#
 # Define OPTIMIZE as yes if you want to build with
 # optimization. Otherwise Ice is build with debug information.
 #
@@ -23,7 +30,7 @@
 #CPP11			?= yes
 
 #
-# If Ice is not installed in the default location set ICE_HOME to 
+# If Ice is not installed in the default location set ICE_HOME to
 # the Ice installation directory.
 #
 #ICE_HOME		?= /opt/Ice-3.6.0
