@@ -6,3 +6,9 @@
 .gradle
 java/test/build
 java/demo/build
+*.sdf
+*.suo
+*~
+*.exe
+*.ilk
+*.pdb
