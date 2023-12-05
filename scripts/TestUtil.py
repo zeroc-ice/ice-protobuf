@@ -289,7 +289,7 @@ if len(path) == 0:
 toplevel = path[0]
 
 #
-# Set the default arch to x64 on x64 machines, this could be overriden
+# Set the default arch to x64 on x64 machines, this could be overridden
 # with the --x86 command line argument.
 #
 if isWin32():
